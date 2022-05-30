@@ -33,19 +33,19 @@ function imgIcon(src, alt = '') {return '<img src="' + src + '" alt="' + alt + '
 
   var defaultActions = {
     bold: {
-      icon: imgIcon('../src/assets/icons/bold.svg', 'bold'),
+      icon: imgIcon('assets/icons/bold.svg', 'bold'),
       title: 'Bold',
       state: () => queryCommandState('bold'),
       result: () => exec('bold')
     },
     italic: {
-      icon: imgIcon('../src/assets/icons/italic.svg', 'italic'),
+      icon: imgIcon('assets/icons/italic.svg', 'italic'),
       title: 'Italic',
       state: () => queryCommandState('italic'),
       result: () => exec('italic')
     },
     underline: {
-      icon: imgIcon('../src/assets/icons/underline.svg', 'underline'),
+      icon: imgIcon('assets/icons/underline.svg', 'underline'),
       title: 'Underline',
       state: () => queryCommandState('underline'),
       result: () => exec('underline')
@@ -83,27 +83,27 @@ function imgIcon(src, alt = '') {return '<img src="' + src + '" alt="' + alt + '
       result: () => peditor.exec('backColor', 'pink')
     },
     olist: {
-      icon: imgIcon('../src/assets/icons/hash.svg', 'ordered list'),
+      icon: imgIcon('assets/icons/hash.svg', 'ordered list'),
       title: 'Ordered List',
       result: () => exec('insertOrderedList')
     },
     ulist: {
-      icon: imgIcon('../src/assets/icons/list.svg', 'unordered list'),
+      icon: imgIcon('assets/icons/list.svg', 'unordered list'),
       title: 'Unordered List',
       result: () => exec('insertUnorderedList')
     },
     code: {
-      icon: imgIcon('../src/assets/icons/code.svg', 'code'),
+      icon: imgIcon('assets/icons/code.svg', 'code'),
       title: 'Code',
       result: () => exec(formatBlock, '<pre>')
     },
     line: {
-      icon: imgIcon('../src/assets/icons/minus.svg', 'Horizontal Line'),
+      icon: imgIcon('assets/icons/minus.svg', 'Horizontal Line'),
       title: 'Horizontal Line',
       result: () => exec('insertHorizontalRule')
     },
     link: {
-      icon: imgIcon('../src/assets/icons/link.svg', 'link'),
+      icon: imgIcon('assets/icons/link.svg', 'link'),
       title: 'Link',
       result: () => {
         const url = window.prompt('Enter the link URL')
@@ -111,7 +111,7 @@ function imgIcon(src, alt = '') {return '<img src="' + src + '" alt="' + alt + '
       }
     },
     image: {
-      icon: imgIcon('../src/assets/icons/image.svg', 'image'),
+      icon: imgIcon('assets/icons/image.svg', 'image'),
       title: 'Image',
       result: () => {
         const url = window.prompt('Enter the image URL')
