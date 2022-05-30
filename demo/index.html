@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peditor</title>
+        <link rel="stylesheet" href="../dist/peditor.css">
+        <script src="../dist/peditor.js"></script>
+    </head>
+
+    <body>
+        <div id="editor" class="peditor"></div>
+        <div>
+            HTML output:
+            <div id="html-output" style="white-space:pre-wrap;"></div>
+        </div>
+        <script>
+            const editor = peditor.init({
+                element: document.getElementById('editor'),
+                onChange: html => {
+                    document.getElementById('html-output').textContent = html
+                },
+                defaultParagraphSeparator: 'p',
+                styleWithCSS: true,
+            })
+        </script>
+        <style>
+
+        </style>
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+.peditor {
+  --peditor-bg: #BF787E;
+  --peditor-btn: #6FBFA255;
+  --peditor-size: 2rem;
+  --peditor-shadow: #05050555;
+  border: 2px solid rgba(10, 10, 10, 0.5);
+  box-sizing: border-box;
+}
+
+.peditor .peditor-menubar {
+  background-color: var(--peditor-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px 2px;
+  border: 2px solid #ececec55;
+  box-shadow: 0px 2px 12px var(--peditor-shadow);
+}
+.peditor-content {
+  min-height: 15rem;
+  color: inherit;
+  background-color: #F8E7DD10;
+}
+
+.peditor .peditor-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: var(--peditor-size);
+  outline: 0;
+  min-width: calc(1.5 * var(--peditor-size));
+  justify-self: stretch;
+  margin: 0;
+  padding: 5px;
+  vertical-align: bottom;
+}
+.peditor .peditor-btn:not(:last-child) {
+  border-right: 2px solid var(--peditor-shadow);
+}
+
+.peditor .peditor-btn:hover,
+.peditor .peditor-btn-selected {
+  background-color: var(--peditor-btn);
+  box-shadow: inset 1px -1px 2px var(--peditor-shadow),
+    inset -1px 1px 2px var(--peditor-shadow);
+}
