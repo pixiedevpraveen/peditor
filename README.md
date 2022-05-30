@@ -27,7 +27,7 @@ const editor = peditor.init({
 ```
 
 ## UI changes
-- to change editor background color just change '--peditor-bg' css variable
+- To change editor background color just change '--peditor-bg' css variable
 
 ```css
   --peditor-bg: #BF787E;
